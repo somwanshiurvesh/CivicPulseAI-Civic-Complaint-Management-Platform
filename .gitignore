@@ -5,10 +5,8 @@ web_modules/
 
 # Local env files
 .env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+.env.*
+!.env.example
 
 # Build output directories
 dist/
@@ -53,6 +51,9 @@ wheels/
 
 # Database / Docker data
 pgdata/
+
+# Local evidence uploads (runtime data)
+uploads/
 
 # OS metadata
 .DS_Store
